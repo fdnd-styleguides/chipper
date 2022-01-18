@@ -1,0 +1,192 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+/* Variables */
+:root {
+    --main-bg: #262626;
+    --secondary-bg: #f8f4f1;
+    --accent-bg: #F7C117;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--secondary-bg);
+    color: #262626;
+    font-family: 'Inter', sans-serif;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: var(--secondary-bg);
+    margin-top: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header {
+    background-color: #fff;
+    padding: 1rem 8rem;
+    margin-bottom: 1.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/*--------------------------------------------------------------
+# Main Content
+--------------------------------------------------------------*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-top: 6rem;
+}
+
+.main-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1.5rem 2rem;
+    width: 60vw;
+    margin-left: 3rem;
+}
+
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+/*--------------------------------------------------------------
+# Colours Wrapper
+--------------------------------------------------------------*/
+
+.colours-wrapper {
+    display: flex;
+    margin-top: 1rem;
+}
+
+/* Color Item */
+.colours-wrapper div {
+    color: #fff;
+    border-radius: 5px;
+    padding: .75rem .75rem;
+    margin-right: 1rem;
+}
+
+.colours-wrapper div:nth-child(1) {
+    background-color: var(--main-bg);
+}
+
+.colours-wrapper div:nth-child(2) {
+    background-color: var(--secondary-bg);
+    color: #262626;
+}
+
+.colours-wrapper div:nth-child(3) {
+    background-color: var(--accent-bg);
+    color: #fff;
+}
+
+.colours-wrapper div:nth-child(4) {
+    color: #262626;
+}
+
+/*--------------------------------------------------------------
+# Typography Wrapper
+--------------------------------------------------------------*/
+
+.typography-wrapper {
+    margin-top: 1.5rem;
+}
+
+/* Heading Levels */
+.typography-wrapper h1 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.typography-wrapper h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+.typography-wrapper h4 {
+    margin-top: 1.25rem;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+
+.typography-wrapper p:nth-child(7) {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+.sidebar {
+    margin: 0 8rem;
+    width: 70%;
+}
+
+.sticky-sidebar {
+    background-color: #fff;
+    padding: 1rem 1.25rem;
+    position: sticky;
+    top: 5.5rem;
+}
+
+.sidebar h4 {
+    font-size: 1.25rem;
+}
+
+/* Sidebar Seperator */
+.sidebar hr {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+/* Sidebar Links */
+.sidebar ul li {
+    margin-bottom: .75rem;
+}
+
+.sidebar ul li a {
+    transition: all 200ms;
+}
+
+.sidebar ul li a:hover {
+    color: var(--accent-bg);
+}
