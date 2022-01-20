@@ -134,6 +134,7 @@ main {
     font-weight: 300;
 }
 
+/* Typography H2 */
 .typography-wrapper h2 {
     font-size: 2rem;
     font-weight: 500;
@@ -141,6 +142,15 @@ main {
     margin-bottom: .5rem;
 }
 
+/* Typography H3 */
+.typography-wrapper h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+/* Typography H4 */
 .typography-wrapper h4 {
     margin-top: 1.25rem;
     font-size: 1.1rem;
@@ -151,6 +161,80 @@ main {
     font-size: 1rem;
     margin-bottom: .5rem;
 }
+
+/*--------------------------------------------------------------
+# Buttons Wrapper
+--------------------------------------------------------------*/
+
+.buttons-wrapper {
+    margin-top: 1.5rem;
+}
+
+.buttons-wrapper h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #fff;
+    color: #262626;
+    padding: 0.5rem 1.313rem;
+    border-radius: 16px;
+    font-weight: 500;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: var(--main-bg);
+    padding: 0.5rem 1.313rem;
+    font-size: .9rem;
+    color: #fff;
+    border-radius: 3.75rem;
+}
+
+/*--------------------------------------------------------------
+# Images Wrapper
+--------------------------------------------------------------*/
+
+.images-wrapper {
+    margin-top: 1.5rem;
+}
+
+.images-wrapper h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+.images-wrapper div {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.images-wrapper img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.images-wrapper span {
+   position: absolute;
+    left: 50%;
+    top: -30px;
+    background-color: var(--accent-bg);
+    width: 90px;
+    height: 75px;
+    border-radius: 40px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
 
 /*--------------------------------------------------------------
 # Sidebar
